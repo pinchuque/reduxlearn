@@ -11,18 +11,15 @@ var DEFAULT_TARGET = 'BUILD';
 
 var DEFAULT_PARAMS = {
     resolve: {
-        extensions: ['', '.ts', '.tsx', '.js']
+        extensions: ['', '.ts', '.tsx', '.js', '.jsx']
     },
     entry: {
-        main: './src/main.tsx'
+        main: './src/newMain.tsx'
     },
     output: {
         publicPath: '',
         filename: '[name].[chunkhash].js',
         sourceMapFilename: '[name].[chunkhash].map'
-    },
-    externals: {
-        'auth0-lock': 'Auth0Lock'
     },
     module: {
         loaders: [
